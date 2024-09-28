@@ -50,7 +50,7 @@ def on_check(zip_name, var, root):
 #update title counter
 def update_title(root):
     active_count = sum(var.get() for var in all_vars)
-    root.title(f"Beamng mod manager (Active: {active_count})")
+    root.title(f"Beamng mod manager (Active: {active_count} / {len(zip_files)})")
 
 #toggle all checks
 def toggle_all(state, root):
